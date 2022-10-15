@@ -10,24 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div class="header">
-        <a class="logo" href=""><span class="logo-part">Web</span>Studio</a>
+    <header class="header">
+      <div class="container top">
+        <a class="logo" href="./index.html"><span class="logo-part">Web</span>Studio</a>
         <nav>
           <ul class="nav">
-            <li><a class="nav-list" href="./index.html">Студія </a></li>
-            <li><a class="nav-list" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="nav-list" href="">Контакти</a></li>
+            <li class="li-item"><a class="nav-list" href="./index.html">Студія </a></li>
+            <li class="li-item"><a class="nav-list" href="./portfolio.html">Портфоліо</a></li>
+            <li class="li-item"><a class="nav-list" href="">Контакти</a></li>
           </ul>
         </nav>
-        <div>
-          <a class="header-mail" href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
+        <div class="header-address">
+          <a class="header-mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
           <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
       </div>
@@ -35,41 +37,38 @@
     <!-- main -->
     <main>
       <section class="portfolio">
-        <h1>Портфоліо</h1>
+        <h1 class="hidden">Портфоліо</h1>
         <!-- фільтр -->
-        <div class="filter">
-          <ul class="list">
-            <li><button class="button-portfolio" type="button">Усі</button></li>
-            <li>
+        <div class="filter container">
+          <ul class="list filter">
+            <li class="li-filter"><button class="button-portfolio" type="button">Усі</button></li>
+            <li class="li-filter">
               <button class="button-portfolio" type="button">Веб-сайти</button>
             </li>
-            <li>
+            <li class="li-filter">
               <button class="button-portfolio" type="button">Додатки</button>
             </li>
-            <li>
+            <li class="li-filter">
               <button class="button-portfolio" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="li-filter">
               <button class="button-portfolio" type="button">Маркетинг</button>
             </li>
           </ul>
         </div>
         <!-- приклади робіт -->
-        <div class="portfolio-projects">
-          <ul class="list">
-            <li>
+        <div class="portfolio-projects container">
+          <ul class="list list-portfolio">
+            <li class="card-project">
               <a class="portfolio-list" href="">
-                <img
-                  src="./images/img-p-1.jpg"
-                  alt="Веб-сайт Технокряк"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="project-title">Технокряк</h2>
-                <p class="project">Веб-сайт</p>
+                <img src="./images/img-p-1.jpg" alt="Веб-сайт Технокряк" width="370" height="294" />
+                <div class="card-bottom">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
                 <img
                   src="./images/img-p-2.jpg"
@@ -77,11 +76,13 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                <p class="project">Дизайн</p>
+                <div class="card-bottom">
+                  <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="project">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
                 <img
                   src="./images/img-p-3.jpg"
@@ -89,11 +90,13 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="project-title">Ресторан Seafood</h2>
-                <p class="project">Додаток</p>
+                <div class="card-bottom">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p class="project">Додаток</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
                 <img
                   src="./images/img-p-4.jpg"
@@ -101,11 +104,13 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="project-title">Проєкт Prime</h2>
-                <p class="project">Маркетинг</p>
+                <div class="card-bottom">
+                  <h2 class="project-title">Проєкт Prime</h2>
+                  <p class="project">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
                 <img
                   src="./images/img-p-5.jpg"
@@ -113,11 +118,13 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="project-title">Проєкт Boxes</h2>
-                <p class="project">Додаток</p>
+                <div class="card-bottom">
+                  <h2 class="project-title">Проєкт Boxes</h2>
+                  <p class="project">Додаток</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
                 <img
                   src="./images/img-p-6.jpg"
@@ -125,35 +132,31 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="project-title">Inspiration has no Borders</h2>
-                <p class="project">Веб-сайт</p>
+                <div class="card-bottom">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="project">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
-                <img
-                  src="./images/img-p-7.jpg"
-                  alt="Дизайн видання"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="project-title">Видання Limited Edition</h2>
-                <p class="project">Дизайн</p>
+                <img src="./images/img-p-7.jpg" alt="Дизайн видання" width="370" height="294" />
+                <div class="card-bottom">
+                  <h2 class="project-title">Видання Limited Edition</h2>
+                  <p class="project">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
-                <img
-                  src="./images/img-p-8.jpg"
-                  alt="Проект маркетингу"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="project-title">Проєкт LAB</h2>
-                <p class="project">Маркетинг</p>
+                <img src="./images/img-p-8.jpg" alt="Проект маркетингу" width="370" height="294" />
+                <div class="card-bottom">
+                  <h2 class="project-title">Проєкт LAB</h2>
+                  <p class="project">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="card-project">
               <a class="portfolio-list" href="">
                 <img
                   src="./images/img-p-9.jpg"
@@ -161,8 +164,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="project-title">Growing Business</h2>
-                <p class="project">Додаток</p>
+                <div class="card-bottom">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="project">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -170,19 +175,15 @@
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <div class="footer">
-        <a class="footer-logo" href="">
-          <span class="logo-part">Web</span>Studio</a
-        >
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href=""><span class="logo-part">Web</span>Studio</a>
         <address class="footer-address">
           <a class="footer-place" href="https://goo.gl/maps/ZFxjsb6pWnwrwmAYA"
             >м. Київ, пр-т Лесі Українки, 26</a
           >
           <br />
-          <a class="footer-mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+          <a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
           <br />
           <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
