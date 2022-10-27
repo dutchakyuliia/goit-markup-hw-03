@@ -3,10 +3,10 @@
   --title-text-color: #212121;
   --accent-color-blue: #2196f3;
   --accent-color-white: #ffffff;
-  --backgroud-color: #f5f5f5;
-  --box-width: 1600px;
+  --backgroud-color: #ffffff;
 }
-/* Глобальні стилі */
+
+/*! Глобальні стилі */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -50,18 +50,26 @@ section {
   list-style-type: none;
 }
 .hidden {
-  color: transparent;
-  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-/* header */
+/*! header */
+
 .container.top {
   display: flex;
   align-items: center;
   border-bottom: 1px #ececec;
 }
 .header {
-  background-color: var(--accent-color-white);
   border-bottom: 1px solid #ececec;
 }
 
@@ -124,15 +132,14 @@ section {
   color: var(--accent-color-blue);
 }
 
-/* main */
+/*! main */
 
 /* герой */
-.container.hero {
-  padding: 104px 0;
+.section.hero {
+  padding: 200px 0;
 }
 .hero {
   margin: 0 auto;
-  max-width: 1600px;
   background-color: #2f303a;
 }
 .hero-title {
@@ -174,7 +181,6 @@ section {
 /* особливості */
 .features {
   padding-bottom: 0;
-  background-color: var(--backgroud-color);
 }
 .list-title {
   margin-bottom: 10px;
@@ -190,9 +196,6 @@ section {
   margin-right: 30px;
 }
 /* чим ми займаємось */
-.occupation {
-  background-color: var(--accent-color-white);
-}
 .list.occupation {
   display: flex;
   justify-content: space-between;
@@ -216,7 +219,7 @@ section {
   justify-content: space-between;
 }
 .card-team {
-  background: var(--accent-color-white);
+  background: var(--backgroud-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -238,7 +241,8 @@ section {
   text-align: center;
 }
 
-/* footer */
+/*! footer */
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -278,11 +282,10 @@ section {
   text-decoration: none;
 }
 
-/* PORTFOLIO */
+/*! PORTFOLIO */
+
 /* фільтр */
-.portfolio {
-  background-color: var(--accent-color-white);
-}
+
 .filter.container {
   margin-bottom: 50px;
 }
@@ -331,7 +334,6 @@ section {
 }
 .card-bottom {
   padding: 20px 24px;
-  background: var(--accent-color-white);
   border: 1px solid #eeeeee;
 }
 .project-title {
