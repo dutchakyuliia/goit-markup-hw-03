@@ -286,10 +286,8 @@ p {
 
 /* фільтр */
 
-.filter.container {
-  margin-bottom: 50px;
-}
 .list.filter {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -337,6 +335,7 @@ p {
   border: 1px solid #eeeeee;
 }
 .project-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
