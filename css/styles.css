@@ -265,6 +265,7 @@ p {
 }
 
 .footer-place {
+  display: block;
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
@@ -272,7 +273,11 @@ p {
   text-decoration: none;
 }
 .footer-mail {
+  display: block;
   margin-bottom: 9px;
+}
+.footer-tel {
+  display: block;
 }
 .footer-mail,
 .footer-tel {
